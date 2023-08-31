@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    background-color: rgb(16, 123, 131);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    font-size: 70px;
+    animation: flicker 1.5s infinite alternate;
+    color:rgb(248, 248, 248);
+}
+
+td {
+    text-align: center;
+    width: 5vw; /* Pixel (px) = (Viewport width unit (vw) * Viewport width) / 100 */
+    border: 1px solid white;
+    color: white;
+    size: 12px;
+    font-weight: 700;
+}
+
+.none {
+    border: none;
+}
+
+.color1 {
+    background-color: #00b6bc;
+}
+
+.color2 {
+    background-color: #03085c;
+}
+
+.color3 {
+    background-color: #5a0a57;
+}
+
+.color4 {
+    background-color: #1976a4;
+}
+
+.color5 {
+    background-color: #40050d;
+}
+
+.color6 {
+    background-color: #835819;
+}
+
+.color7 {
+    background-color: #a14933;
+}
+
+.color8 {
+    background-color:#5206be;
+}
+
+.color9 {
+    background-color:#0a4c16;
+}
+
+.color10{
+    background-color: #b535cf;
+}
+
+.color11{
+    background-color: #616f6e;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    0%, 17%, 33%, 50%, 66%, 83%, 100% {
+  
+        text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0fa,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        0 0 70px #0fa,
+        0 0 110px #0fa,
+        0 0 160px #0fa
+    }
+    
+    20%, 40%, 60%, 80% {        
+        text-shadow: none;
+    }    
+}
+  
+td:hover {
+    filter: brightness(200%);
+    color: black;
+}
